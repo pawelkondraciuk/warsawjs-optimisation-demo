@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 
 import { ChildComponent } from './child.component';
+import { ChildRoutingModule } from './child.routing';
 
 @NgModule({
-  imports: [],
-  declarations: [ChildComponent],
-  exports: [ChildComponent],
+  imports: [ChildRoutingModule],
+  declarations: [ChildComponent]
 })
 export class ChildModule { }
