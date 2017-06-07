@@ -1,0 +1,41 @@
+{
+  "name": "warsawjs-optimisation-demo",
+  "version": "1.0.0",
+  "description": "Demo for presentation purposes",
+  "scripts": {
+    "start": "webpack-dev-server --inline --progress --port 8080",
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "~4.1.2",
+    "@angular/compiler": "~4.1.2",
+    "@angular/core": "~4.1.2",
+    "@angular/forms": "~4.1.2",
+    "@angular/http": "~4.1.2",
+    "@angular/platform-browser": "~4.1.2",
+    "@angular/platform-browser-dynamic": "~4.1.2",
+    "@angular/router": "~4.1.2",
+    "core-js": "^2.4.1",
+    "rxjs": "~5.0.2",
+    "zone.js": "0.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.13",
+    "angular2-template-loader": "^0.6.2",
+    "awesome-typescript-loader": "~3.1.2",
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "~2.1.0",
+    "file-loader": "^0.11.1",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.28.0",
+    "null-loader": "^0.1.1",
+    "raw-loader": "0.5.1",
+    "rimraf": "~2.6.1",
+    "style-loader": "^0.18.1",
+    "typescript": "~2.2.2",
+    "webpack": "~2.6.1",
+    "webpack-dev-server": "~2.4.2",
+    "webpack-merge": "~4.1.0"
+  }
+}
