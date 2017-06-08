@@ -2,14 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { RouteTwoComponent } from './route-two.component';
-import { ChildComponent } from './+child';
 
 const routes: Routes = [
   { 
-    path: 'route-two',
+    path: '',
     children: [
       { path: '', component: RouteTwoComponent },
-      { path: 'child', component: ChildComponent },
+      { path: 'child', loadChildren: './+child-two/child.module#ChildModule' },
     ]
   },
 ];

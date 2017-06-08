@@ -8,6 +8,8 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'route-one', loadChildren: './+route-one/route-one.module#RouteOneModule' },
+  { path: 'route-two', loadChildren: './+route-two/route-two.module#RouteTwoModule' },
 ];
 
 @NgModule({

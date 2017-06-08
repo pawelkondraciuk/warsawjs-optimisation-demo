@@ -9,17 +9,11 @@ import { HomeComponent } from './home';
 import { HeaderComponent } from './header';
 import { FooterComponent } from './footer';
 
-import { RouteOneModule } from './+route-one';
-import { RouteTwoModule } from './+route-two';
-
 @NgModule({
   imports: [
     BrowserModule,
 
     AppRoutingModule,
-
-    RouteOneModule,
-    RouteTwoModule,
   ],
   declarations: [
     AppComponent,
