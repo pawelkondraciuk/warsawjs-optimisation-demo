@@ -6,7 +6,6 @@ var helpers = require('./helpers');
 module.exports = {
   entry: {
     'polyfills': './src/polyfills.ts',
-    'vendor': './src/vendor.ts',
     'app': './src/main.ts'
   },
 
@@ -56,7 +55,14 @@ module.exports = {
     ),
 
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['app', 'vendor', 'polyfills']
+      name: 'polyfills',
+      chunks: ['polyfills']
+    }),
+
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      chunks: ['app'],
+      minChunks: module => /node_modules/.test(module.resource)
     }),
 
     new HtmlWebpackPlugin({
