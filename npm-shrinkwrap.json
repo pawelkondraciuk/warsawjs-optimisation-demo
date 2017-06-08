@@ -561,6 +561,12 @@
       "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz",
       "dev": true
     },
+    "corser": {
+      "version": "2.0.1",
+      "from": "corser@>=2.0.0 <2.1.0",
+      "resolved": "https://registry.npmjs.org/corser/-/corser-2.0.1.tgz",
+      "dev": true
+    },
     "create-ecdh": {
       "version": "4.0.0",
       "from": "create-ecdh@>=4.0.0 <5.0.0",
@@ -746,6 +752,20 @@
       "from": "domutils@1.5.1",
       "resolved": "https://registry.npmjs.org/domutils/-/domutils-1.5.1.tgz",
       "dev": true
+    },
+    "ecstatic": {
+      "version": "2.2.1",
+      "from": "ecstatic@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/ecstatic/-/ecstatic-2.2.1.tgz",
+      "dev": true,
+      "dependencies": {
+        "minimist": {
+          "version": "1.2.0",
+          "from": "minimist@>=1.1.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/minimist/-/minimist-1.2.0.tgz",
+          "dev": true
+        }
+      }
     },
     "ee-first": {
       "version": "1.1.1",
@@ -2037,6 +2057,20 @@
         }
       }
     },
+    "http-server": {
+      "version": "0.10.0",
+      "from": "http-server@latest",
+      "resolved": "https://registry.npmjs.org/http-server/-/http-server-0.10.0.tgz",
+      "dev": true,
+      "dependencies": {
+        "colors": {
+          "version": "1.0.3",
+          "from": "colors@1.0.3",
+          "resolved": "https://registry.npmjs.org/colors/-/colors-1.0.3.tgz",
+          "dev": true
+        }
+      }
+    },
     "https-browserify": {
       "version": "0.0.1",
       "from": "https-browserify@0.0.1",
@@ -2582,10 +2616,22 @@
       "resolved": "https://registry.npmjs.org/once/-/once-1.4.0.tgz",
       "dev": true
     },
+    "opener": {
+      "version": "1.4.3",
+      "from": "opener@>=1.4.0 <1.5.0",
+      "resolved": "https://registry.npmjs.org/opener/-/opener-1.4.3.tgz",
+      "dev": true
+    },
     "opn": {
       "version": "4.0.2",
       "from": "opn@4.0.2",
       "resolved": "https://registry.npmjs.org/opn/-/opn-4.0.2.tgz",
+      "dev": true
+    },
+    "optimist": {
+      "version": "0.6.1",
+      "from": "optimist@>=0.6.0 <0.7.0",
+      "resolved": "https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz",
       "dev": true
     },
     "original": {
@@ -3621,6 +3667,20 @@
       "dev": true,
       "optional": true
     },
+    "union": {
+      "version": "0.4.6",
+      "from": "union@>=0.4.3 <0.5.0",
+      "resolved": "https://registry.npmjs.org/union/-/union-0.4.6.tgz",
+      "dev": true,
+      "dependencies": {
+        "qs": {
+          "version": "2.3.3",
+          "from": "qs@>=2.3.3 <2.4.0",
+          "resolved": "https://registry.npmjs.org/qs/-/qs-2.3.3.tgz",
+          "dev": true
+        }
+      }
+    },
     "uniq": {
       "version": "1.0.1",
       "from": "uniq@>=1.0.1 <2.0.0",
@@ -3664,6 +3724,12 @@
           "dev": true
         }
       }
+    },
+    "url-join": {
+      "version": "2.0.2",
+      "from": "url-join@>=2.0.2 <3.0.0",
+      "resolved": "https://registry.npmjs.org/url-join/-/url-join-2.0.2.tgz",
+      "dev": true
     },
     "url-parse": {
       "version": "1.1.9",
