@@ -13,14 +13,16 @@
   },
   "exclude": [
     "node_modules",
-    "dist",
-    "src/**/*.spec.ts",
-    "src/**/*.e2e.ts"
+    "dist"
   ],
   "awesomeTypescriptLoaderOptions": {
     "useBabel": true,
     "babelOptions": {
       "presets": [ ["es2015", { "modules": false }] ]
     }
+  },
+  "angularCompilerOptions": {
+    "genDir": "./aot",
+    "skipMetadataEmit": true
   }
 }
